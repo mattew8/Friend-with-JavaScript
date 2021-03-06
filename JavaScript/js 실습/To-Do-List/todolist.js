@@ -74,13 +74,7 @@ function clearAll(){
                 // querySelectorAll을 통해 현 모든 list들 가져옴
 
     for(i=1; i < allLists.length; i++){
-        nowLists = document.getElementById(i);
-                // 현재 추가된 list들의 아이디는 모두 숫자 형태! 따라서 for문을 통해 이들을 가져옴
-
-        nowLists.parentNode.removeChild(nowLists);
-                // 역시 부모 요소 접근해 각 list를 삭제!
-
-        listNum = 1
-                // 이후에 만들어질 list들의 id는 다시 1부터 시작할 수 있도록!
+        allLists[i].parentNode.removeChild(allLists[i])
+                // 모든 list의 i번째에 대해 부모요소 접근 후 제거
     }
 }
