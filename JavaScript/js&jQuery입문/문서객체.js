@@ -41,9 +41,9 @@ window.onload = function(){
 
 // 문서 객체 제거   
     var willRemove = document.getElementById('will_remove');
-    document.body.removeChild(willRemove)
+    // document.body.removeChild(willRemove)
     // body 문서 객체 바로 아래에 제거하고자 하는 문서 객체가 있으므로 -> removeChild 사용
 
-    willRemove.parentNode.removeChild(willRemove);
+    // willRemove.parentNode.removeChild(willRemove);
     // 일반적으로는 다음과 같이 부모 노드로 이동한 후, 부모 노드에서 자식 노드 삭제
 }   
