@@ -18,31 +18,38 @@ html, body{
 
 .add-item{
     text-align: center;
-    margin-top: 1.5%;
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 35%;
+    display: flex;
 }
 
 #text{
-    width: 45%;
-    height: 37px;
+    width: 30%;
+    height: 35px;
     box-sizing: border-box;
     padding: 15px;
     border: 1px solid green;
     border-right: none;
     border-radius: 5px;
+    flex-grow: 8;
 }
 
-.add-btn{
-    height: 37px;
-    width: 5%;
-    margin-left: -1%;
+#add-btn{
+    height: 35px;
+    width: 10%;
+    box-sizing: border-box;
     border: 1px solid green;
     border-radius: 5px;
     color: green;
+    flex-grow: 1;
+    font-size: small;
 }
 
 .item-list{
-    text-align: center;
-    margin-top: 3%;
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 35%;
 }
 
 #to-do-lists{
@@ -51,16 +58,21 @@ html, body{
 
 #item-name{
     display: inline-block;
-    margin-right: 25%;
     font-size: 1.3rem;
 }
 
 .btn-box{
     display: inline-block;
-    margin-right: 1%;
+    float: right;
 }
 
 .clear{
     text-align: center;
     margin-top: 3%;
+}
+
+#clear-btn{
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #cacaca;  
 }

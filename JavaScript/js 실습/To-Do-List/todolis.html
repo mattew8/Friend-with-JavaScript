@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="todolist.js"></script>
+    <script src="todolist.js" defer></script>
     <link rel="stylesheet" href="todolist.css">
 </head>
 <body>
@@ -16,16 +16,16 @@
 
         <div class="add-item">
             <input id="text" type="text" placeholder="Name...">
-            <button class="add-btn" onclick="addItem()">Add Item</button>
+            <div id="add-btn">hi</div>
         </div>
 
         <div id="ToDoBody">
             <div class="item-list" id="to-do-lists">
                 <div id="item-name"></div>
                 <div class="btn-box">
-                    <button id="complete-btn" class="item-btns">O</button>
-                    <button id="update-btn" class="item-btns">D</button>
-                    <button id="delete-btn" class="item-btns">C</button>
+                    <button id="complete-btn" class="item-btns" onclick="completeItem(this)">C</button>
+                    <button id="update-btn" class="item-btns">U</button>
+                    <button id="delete-btn" class="item-btns" onclick="deleteItem(this)">D</button>
                 </div>
             </div>
         </div>
