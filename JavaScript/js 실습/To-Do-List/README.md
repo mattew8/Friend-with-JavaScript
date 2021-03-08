@@ -14,6 +14,7 @@
 2. Update 기능 추가<br>
 3. Complete/Update/Delete 버튼 디자인 개선<br>
 
-![image](https://user-images.githubusercontent.com/64009005/110289421-bcd62800-802c-11eb-9f20-a71130481682.png)<br>
+추가 수정<br>
+![image](https://user-images.githubusercontent.com/64009005/110289669-1a6a7480-802d-11eb-85dd-5413707d305b.png)<br>
 1-1. 안쪽 div border를 없에고 바깥쪽에 border를 줌<br>
 3. btn 대신 div로 처리, 대신 cursor를 pointer로 줌<br>
