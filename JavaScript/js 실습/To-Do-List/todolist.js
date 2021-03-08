@@ -76,5 +76,6 @@ function clearAll(){
     for(i=1; i < allLists.length; i++){
         allLists[i].parentNode.removeChild(allLists[i])
                 // 모든 list의 i번째에 대해 부모요소 접근 후 제거
+                // 0번째는 우리가 템플릿으로 복제해 사용중으므로 제거x
     }
 }

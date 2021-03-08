@@ -6,7 +6,7 @@ html, body{
 }
 
 #container{
-    background-color: #cacaca;
+    background-color: #F5F5F5;
     height: 100%;
 }
 
@@ -17,11 +17,18 @@ html, body{
 }
 
 .add-item{
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 2%;
     width: 35%;
     display: flex;
+    margin: 0 auto;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.add-item :focus{
+    outline: none;
 }
 
 #text{
@@ -29,9 +36,8 @@ html, body{
     height: 35px;
     box-sizing: border-box;
     padding: 15px;
-    border: 1px solid green;
-    border-right: none;
-    border-radius: 5px;
+    border: none;
+    border-right: 1px solid green;
     flex-grow: 8;
 }
 
@@ -39,11 +45,11 @@ html, body{
     height: 35px;
     width: 10%;
     box-sizing: border-box;
-    border: 1px solid green;
-    border-radius: 5px;
+    border: none;
     color: green;
     flex-grow: 1;
     font-size: small;
+    cursor: pointer;
 }
 
 .item-list{
@@ -62,8 +68,16 @@ html, body{
 }
 
 .btn-box{
-    display: inline-block;
+    display: flex;
     float: right;
+    margin-right: 7%;
+}
+
+.item-btns{
+    margin: 20%;
+    flex-grow: 0.1;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .clear{
@@ -74,5 +88,8 @@ html, body{
 #clear-btn{
     border: 1px solid green;
     border-radius: 5px;
-    background-color: #cacaca;  
+    color: green;
+    background-color: #F5F5F5;  
+    padding: 0.5% 1.3% 0.5% 1.3%;
+    cursor: pointer;
 }
